@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Temperature</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Temperature Calculator</h1>
+        <form name = "TempText" id = "69">
+            <h2>Please input Temperature that want to Calculator</h2>
+            <input type="text" name="temp" value="" />
+            <br>
+            <input type="submit" value="Celsius to Fahrenheit" onclick="Fahrenheit()" />
+            <input type="submit" value="Fahrenheit to Celsius" onclick="Celsius()" />
+        </form>
+        <script>
+            tmp = document.getElementById("69");
+            function Celsius() {
+                tmp.action = "jsp.jsp";
+            }
+            function Fahrenheit() {
+                tmp.action = "Servlet";
+            }
+        </script>
+    </body>
+</html>
